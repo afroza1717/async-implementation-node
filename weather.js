@@ -1,7 +1,9 @@
+const temperatureFahrenheit = '75\u00B0F';
+
 function fetchWeather(city) {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(`Weather in ${city} is 75\u00B0F`);
+            resolve(`Weather in ${city} is ` + temperatureFahrenheit);
         }, 2000);
     });
 }
